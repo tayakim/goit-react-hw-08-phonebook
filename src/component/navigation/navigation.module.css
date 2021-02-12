@@ -1,0 +1,43 @@
+.list {
+    list-style: none;
+    max-width: 360px;
+    display: flex;
+    margin-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.item {
+    font-family: "Segoe UI";
+    text-decoration: none;
+    text-align: center;
+    margin-top: 0;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #535759;
+    font-weight: 400;
+}
+
+.activeItem {
+    font-size: 16px;
+    font-weight: 500;
+    color: #3d4b53;
+}
+
+.item:first-child {
+    margin-right: 15px;
+}
+
+.button {
+    background-color: #444444;
+    border: none;
+    color: white;
+    margin-left: 300px;
+    margin-top: 0px;
+    text-align: center;
+    padding: 5px;
+    font-size: 10px;
+    cursor: pointer;
+}

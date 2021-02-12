@@ -3,11 +3,9 @@ import { useRef, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import * as contactOperation from "../redux/contacts/contactOperation";
 import { getLoader } from "../redux/contacts/contactSelector";
-import ContactList from "../contactList/ContactList";
-import ContactForm from "../contactForm/ContactForm";
-import Filter from "../filter/Filter";
 import Section from "../section/Section";
 import Container from "../container/Container";
+import Navigation from "../navigation/Navigation";
 
 export default function Phonebook() {
   // const contacts = useSelector(getVisibleContacts);
@@ -29,13 +27,15 @@ export default function Phonebook() {
   return (
     <Container>
       <Section title="Phonebook">
-        <ContactForm />
+        <Navigation />
+        {/* <AuthForm /> */}
+        {/* <ContactForm /> */}
         {loader && <p>Loading...</p>}
       </Section>
-      <Section title="Contacts">
-        <Filter />
-        <ContactList />
-      </Section>
+      {/* <Section title="Contacts"> */}
+      {/* <Filter /> */}
+      {/* <ContactList /> */}
+      {/* </Section> */}
     </Container>
   );
 }

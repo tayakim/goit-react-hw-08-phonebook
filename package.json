@@ -2,7 +2,6 @@
     "name": "goit-react-hw-07-phonebook",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://tayakim.github.io/goit-react-hw-07-phonebook",
     "dependencies": {
         "@reduxjs/toolkit": "^1.5.0",
         "@testing-library/jest-dom": "^5.11.9",
@@ -22,8 +21,9 @@
         "web-vitals": "^1.1.0"
     },
     "scripts": {
+        "netlify": "netlify",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
+        "deploy": "netlify deploy -p",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
@@ -47,5 +47,8 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "devDependencies": {
+        "netlify-cli": "^3.6.0"
     }
 }

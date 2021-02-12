@@ -1,11 +1,19 @@
 .section {
-    width: 250px;
-    margin-top: 20px;
+    width: 300px;
+    margin-top: 10px;
     margin-bottom: 20px;
+    font-family: "Segoe UI";
+    color: #535759;
+    font-weight: 500;
+    align-items: inherit;
 }
 
 .title {
     font-family: "Segoe UI";
+    text-align: center;
+    margin-top: 0;
+    margin-left: 70px;
+    margin-bottom: 10px;
     font-size: 24px;
     color: #535759;
     font-weight: 700;

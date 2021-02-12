@@ -12,6 +12,7 @@ export default function ContactList() {
 
   return (
     <TransitionGroup component="ul" className={styles.list}>
+      <h3>My contacts list:</h3>
       {contacts.map(({ name, number, id }) => (
         <CSSTransition key={id} timeout={250} classNames={styles}>
           <li className={styles.item}>
@@ -21,7 +22,7 @@ export default function ContactList() {
               onClick={() => onDeleteContact(id)}
               className={styles.button}
             >
-              Delete
+              Delete contact
             </button>
           </li>
         </CSSTransition>
